@@ -1,0 +1,74 @@
+<div id="footer">
+  <div id="section-footer" class="section">
+    <div class="container">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-3 prl col-sm-6 foot-about">
+            <div class="logo"> <a href="/"><img src="/template/default/skin/images/logo.png" alt="{$confs.sitename}" class="img-responsive" /></a> </div>
+            <div class="about-us"> {$confs.desc} </div>
+            <div class="newsletter foot-social">
+              <div class="content">
+                <form  class="b-search-form" name="formsearch" action="{:url('Cate/search')}" method="POST">
+                  <input type="hidden" name="kwtype" value="0" />
+                  <div class="input-group input-newsletter">
+                    <input type="text" placeholder="" value="" name="q" class="form-control keyword" />
+                    <span class="input-group-addon btn-subscribe">
+                    <input type="submit" value="搜索" class="btn" />
+                    </span> </div>
+                </form>
+                <div class="clearfix"></div>
+                <div class="mbl"></div>
+                <div class="block-info"> <a href="https://weibo.com/" target="_blank" class="icons"><i class="fa fa-weibo"></i></a> <a href="http://t.qq.com" target="_blank" class="icons"><i class="fa fa-tencent-weibo"></i></a> <a href="http://wpa.qq.com/msgrd?v=3&uin={$confs.qq}&asite=qq&menu=yes" target="_blank" class="icons"><i class="fa fa-qq"></i></a> <a href="{dede:global.cfg_shop/}" target="_blank" class="icons"><i class="fa fa-shopping-cart"></i></a> </div>
+              </div>
+            </div>
+          </div>
+          
+           {volist name="cateRes" id="cate" offset="1" length="1"}
+          <div class="col-md-3 pll prl col-sm-6 hidden-sm hidden-xs foot-news">
+            <h3 class="heading dark-title"> <i class="fa fa-newspaper-o"></i> <a href="{if condition="$cate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 3"}{$cate.link}{/if}">{$cate.cate_name}</a> </h3>
+            <div class="recent-twitter f-news">
+              <div class="content">
+                <nav class="list-recent-twitter">
+                  <ul class="list-unstyled mbn">
+                    {volist name="xinwen" id="vo" offset="0" length="4"}
+                    <li> <a href="{:url('Article/index',array('aid'=>$vo['id']))}"> <strong class="mrs fn-icon"><i class="fa fa-caret-right"></i></strong> <span class="fn-title">{$vo.title|mb_substr=0,20,'utf-8'} <small><i class="fa fa-calendar" ></i>&nbsp; {$vo.time|date="Y-m-d",###}</small></span> </a> </li>
+                    {/volist}
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          {/volist}
+          <div class="col-md-3 prl col-sm-6 hidden-xs foot-contact">
+            {volist name="cateRes" id="cate" offset="0" length="1"}
+            <h3 class="heading dark-title"> <i class="fa fa-user"></i>  <a href="{if condition="$cate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 3"}{$cate.link}{/if}">{$cate.cate_name}</a> </h3>
+            {/volist}
+            <div class="contact-info">
+              <ul class="list-unstyled mbn">
+                <li> <i class="fa fa-map-marker fa-fw"></i> 公司地址：河南省新乡市金穗大道与文化路交叉口东30米路北  </li>
+                <li> <i class="fa fa-phone fa-fw"></i> 电话：{$confs.contact} </li>
+                <!-- <li> <i class="fa fa-heart-o fa-fw"></i> 手机：{dede:global.cfg_phone/} </li> -->
+                <li> <i class="fa fa-envelope fa-fw"></i> E-mail：{$confs.email} </li>
+                <!-- <li> <i class="fa fa-home fa-fw"></i> 网址：{dede:global.cfg_basehost/} </li> -->
+                <!-- <li> <i class="fa fa-wechat fa-fw"></i> 传真：{dede:global.cfg_fax/} </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 pll col-sm-6 hidden-sm hidden-xs foot-qrcode">
+            <h3 class="heading">扫描二维码</h3>
+            <div class="content f-qrcode"> <img src="__ADMIN__/uploads/{$confs.ewm}"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="section-copyright">
+    <div class="container">
+      <p class="text-center mbn"> Copyright © 2018-2020 新誉佳教育集团科技有限公司 版权所有 <a href="http://www.miitbeian.gov.cn/" target="_blank">{$confs.beian}</a> &nbsp;</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>新乡市残联康复医院</title>
+<meta name="description" content="{$confs.desc}" />
+<meta name="keywords" content="{$confs.keywords}" />
+<meta name="author" content="order by dzc" />
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/font-awesome.min.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/ionicons.min.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/style.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/animate.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/core.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/layout.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/vendor.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/index.css"/>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/tk.css"/>
+<script src="/template/default/skin/js/jquery-1.11.2.min.js"></script>
+<script src="/template/default/skin/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/template/default/skin/js/bootstrap.min.js"></script>
+<script src="/template/default/skin/js/bootstrap-hover-dropdown.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+<script src="/skin/js/html5.js"></script>
+<script src="/skin/js/respond.min.js"></script>
+<style>
+	article,aside,dialog,footer,header,section,nav,figure,menu{display:block;padding:0;margin:0;}
+</style>
+<link rel="stylesheet" href="/skin/css/ie.css" type="text/css" media="screen"/>
+<![endif]-->
+
+<!--[if lte IE 9]>
+<script src="/skin/js/jquery.placeholder.js"></script>
+<script>
+jQuery(document).ready(function($){
+	$('input, textarea').placeholder();
+});
+</script>
+<script type="text/javascript" src="/skin/js/pie.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.indexci img').each(function() {
+		PIE.attach(this);  
+	});  
+});
+</script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="/skin/js/selectivizr.js"></script>
+  <script type="text/javascript" src="/skin/js/excanvas.compiled.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--[if lt IE 8]>
+	<div class="lt-ie8-bg">
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
+		<p>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<p class="browsehappy">对不起，您正在使用的是 <strong>过时</strong> 的浏览器.</p>
+		<p>请升级您的浏览器（IE8+，或者是火狐、谷歌、Opera、Safari等现代浏览器），以改进您的用户体验！</p>
+	</div>
+	<style>
+	.lt-ie8-bg{z-index:11111;position:absolute;top:0;left:0;right:0;bottom:0;background-color:#333;color:#999;padding:100px 20px;text-align:center;font-size:26px}
+	.lt-ie8-bg a{color:#f5f5f5;border-bottom:2px solid #fff}
+	.lt-ie8-bg a:hover{text-decoration:none}
+	#wrapper{display:none;}
+	</style>
+<![endif]--> 
+<a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+<div id="wrapper"> 
+  {include file="/default/head"}
+  <div class="slider-wrapper">
+    <div id="slider">
+      <div id="banner-sliders" data-ride="carousel" class="carousel slide">
+        <div class="carousel-inner"> 
+          {volist name="imgRes" id="vo" offset="0" length="1"}
+          <div class="item active"> <a href="{$vo.flink}" target="_black"> <img src="__INDEX__/ad/{$vo.fimg_src}" alt="" /></a>
+            <!-- <div class="carousel-caption">
+               <div class="heading animated fadeIn delay-2">[field:title/]</div>
+              <div class="sub-heading animated fadeIn delay-3">[field:description/]</div>
+              <a href="#1" class="btn btn-more animated fadeIn delay-4 btn-18">查看更多<i class="fa fa-plus"></i></a>  
+                
+              </div> -->
+          </div>
+          {/volist}
+          
+          
+         {volist name="imgRes" id="vo" offset="1" }
+          <div class="item"> <a href="{$vo.flink}" target="_black"> <img src="__INDEX__/ad/{$vo.fimg_src}" alt="" /> </a>
+            <!-- <div class="carousel-caption">
+              <div class="heading animated fadeIn delay-2">[field:title/]</div>
+              <div class="sub-heading animated fadeIn delay-3">[field:description/]</div>
+              <a href="#[field:global name=autoindex runphp="yes"]@me=@me+1;[/field:global]" class="btn btn-more animated fadeIn delay-4 btn-18">查看更多<i class="fa fa-plus"></i></a> </div>  -->
+          </div>
+          {/volist} </div>
+        <a href="#banner-sliders" data-slide="prev" class="left carousel-control"><span class="fa fa-arrow-left"></span></a> <a href="#banner-sliders" data-slide="next" class="right carousel-control"><span class="fa fa-arrow-right"></span></a> </div>
+    </div>
+  </div>
+  <div id="main">
+    <div id="content">
+      <div id="section-features" class="section">
+        <div class="container text-center"> {dede:type typeid='21'}
+          <div class="section-heading">
+            <div class="info">[field:typename/]</div>
+            <div class="sub-title mbm">[field:description/]</div>
+            <div class="line"></div>
+          </div>
+          {/dede:type}
+          <div class="section-content">
+            <div class="list-features">
+              <div class="row"> {dede:type typeid='23'}
+                <div class="col-md-3 col-sm-6 col-xs-6 committed-item"> <a> <span class="icons med-xray"></span> <span class="title">[field:typename/]</span> <span class="info">[field:description/]</span> </a> </div>
+                {/dede:type} 
+                {dede:type typeid='24'}
+                <div class="col-md-3 col-sm-6 col-xs-6 committed-item"> <a> <span class="icons med-medical2"></span> <span class="title">[field:typename/]</span> <span class="info">[field:description/]</span> </a> </div>
+                {/dede:type} 
+                {dede:type typeid='25'}
+                <div class="col-md-3 col-sm-6 col-xs-6 committed-item"> <a> <span class="icons med-heart2"></span> <span class="title">[field:typename/]</span> <span class="info">[field:description/]</span> </a> </div>
+                {/dede:type}
+                {dede:type typeid='26'}
+                <div class="col-md-3 col-sm-6 col-xs-6 committed-item"> <a> <span class="icons med-vehicle"></span> <span class="title">[field:typename/]</span> <span class="info">[field:description/]</span> </a> </div>
+                {/dede:type} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {dede:channelartlist typeid='1,1'}
+      <div id="section-what-we-do" class="section section-background">
+        <div class="container text-center">
+          <div class="section-heading">
+            <div class="title white-title"><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></div>
+            <div class="line"></div>
+          </div>
+          <div class="section-content">
+            <div class="list-departments">
+              <div class="row mbxxl0"> {dede:arclist row='8' titlelen='50' orderby='pubdate'}
+                <div class="col-md-3 col-sm-3 col-xs-6 iport-item"> <a href="[field:arcurl/]"> <img src="[field:picname/]" alt="[field:title/]" class="img-responsive"/>
+                  <p class="iport-title" title="[field:title/]">[field:title/]</p>
+                  </a> </div>
+                {/dede:arclist} </div>
+            </div>
+            <a href="{dede:field name='typeurl'/}" class="btn-our-departments btn btn-success btn-outlined btn-18"> 查看更多产品 <i class="fa fa-plus mll"></i> </a> </div>
+        </div>
+      </div>
+      {/dede:channelartlist}
+      <div id="section-meet-our-doctor" class="section"> {dede:channelartlist typeid='27,27'}
+        <div class="container text-center">
+          <div class="section-heading">
+            <div class="title"><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></div>
+            <div class="line"></div>
+            <div class="sub-title mbxxl">{dede:field name='description'/}</div>
+          </div>
+          <div class="row section-content">
+            <div id="doctor-carousel" data-ride="carousel" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="man"> {dede:arclist limit='0,4' titlelen='50' orderby='pubdate'}
+                    <div class="col-md-3 col-sm-3 col-xs-6 igal-item">
+                      <div class="thumb"> <a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]" class="img-responsive"/></a>
+                        <div class="caption">
+                          <div class="name"><a href="[field:arcurl/]">[field:title/]</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    {/dede:arclist} </div>
+                </div>
+                <div class="item">
+                  <div class="man"> {dede:arclist limit='4,4' titlelen='50' orderby='pubdate'}
+                    <div class="col-md-3 col-sm-3 col-xs-6 igal-item">
+                      <div class="thumb"> <a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]" class="img-responsive"/></a>
+                        <div class="caption">
+                          <div class="name"><a href="[field:arcurl/]">[field:title/]</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    {/dede:arclist} </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/dede:channelartlist} <a href="#doctor-carousel" data-slide="prev" class="left carousel-control"><span class="fa fa-arrow-left"></span></a> <a href="#doctor-carousel" data-slide="next" class="right carousel-control"><span class="fa fa-arrow-right"></span></a> </div>
+      <div id="section-patients-saying" class="section section-background">
+        <div class="container text-center">
+          <div class="section-heading"> {dede:type typeid='28'}
+            <div class="title">[field:typename/]</div>
+            {/dede:type}
+            <div class="line"></div>
+          </div>
+          <div class="section-content">
+            <div id="patient-sliders" data-ride="carousel" class="carousel slide" data-interval="false">
+              <div class="carousel-inner"> {dede:arclist typeid='28' limit='0,1' titlelen='50' orderby='pubdate'}
+                <div class="item active">
+                  <div class="avatar"><img src="[field:picname/]" alt="[field:title/]" class="img-responsive"/></div>
+                  <div class="name">[field:title/]</div>
+                  <div class="pos">[field:shorttitle/]</div>
+                  <div class="desc">[field:description/]</div>
+                </div>
+                {/dede:arclist}
+                
+                {dede:arclist typeid='28' limit='1,3' titlelen='50' orderby='pubdate'}
+                <div class="item">
+                  <div class="avatar"><img src="[field:picname/]" alt="[field:title/]" class="img-responsive"/></div>
+                  <div class="name">[field:title/]</div>
+                  <div class="pos">[field:shorttitle/]</div>
+                  <div class="desc">[field:description/]</div>
+                </div>
+                {/dede:arclist} </div>
+            </div>
+          </div>
+        </div>
+        <a href="#patient-sliders" data-slide="prev" class="left carousel-control"><span class="fa fa-arrow-left"></span></a> <a href="#patient-sliders" data-slide="next" class="right carousel-control"><span class="fa fa-arrow-right"></span></a> </div>
+      {dede:channelartlist typeid='16,16'}
+      <div id="section-latest-news" class="section">
+        <div class="container text-center">
+          <div class="section-heading">
+            <div class="title"><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></div>
+            <div class="line"></div>
+          </div>
+          <div class="section-content">
+            <div class="row"> {dede:arclist row='4' titlelen='50' orderby='pubdate'}
+              <div class="col-md-6 col-sm-12 col-xs-12 inews-item">
+                <div class="box">
+                  <div class="thumb"> <a href="[field:arcurl/]" class="thumb-link"><img src="[field:picname/]" alt="[field:title/]" class="img-responsive"/></a>
+                    <div class="ribbon"> <span>[field:pubdate function="MyDate('d',@me)"/]</span> <span>[field:pubdate function="MyDate('Y-m',@me)"/]</span> </div>
+                  </div>
+                  <div class="info">
+                    <div class="title"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></div>
+                    <div class="desc">[field:description function="cn_substr(@me,200)"/]...</div>
+                    <div class="author"><a href="[field:typeurl/]"><i class="fa fa-list-alt mrs"></i> [field:typename/]</a></div>
+                    <div class="views"><a href="[field:arcurl/]"><i class="fa fa-eye mrs"></i></a></div>
+                  </div>
+                </div>
+              </div>
+              {/dede:arclist} </div>
+          </div>
+        </div>
+      </div>
+      {/dede:channelartlist}
+      <div id="section-about-us" class="section section-background">
+        <div class="container text-center">
+          <div class="section-content">
+            <div class="list-about">
+              <div class="row">
+                <div data-value="702" class="col-md-3 fact col-sm-3 col-xs-3 fact-item">
+                  <div class="number factor">702</div>
+                  <div class="name">我们现有设备数</div>
+                  <div class="line"></div>
+                </div>
+                <div data-value="627" class="col-md-3 fact col-sm-3 col-xs-3 fact-item">
+                  <div class="number factor">627</div>
+                  <div class="name">我们的员工数</div>
+                  <div class="line"></div>
+                </div>
+                <div data-value="64" class="col-md-3 fact col-sm-3 col-xs-3 fact-item">
+                  <div class="number factor">64</div>
+                  <div class="name">技术专利</div>
+                  <div class="line"></div>
+                </div>
+                <div data-value="3000" class="col-md-3 fact col-sm-3 col-xs-3 fact-item">
+                  <div class="number factor">3000</div>
+                  <div class="name">十万级洁净车间(平米)</div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {include file="/default/footer"} 
+</div>
+<script src="/template/default/skin/js/jquery.appear.js"></script> 
+<script src="/template/default/skin/js/index.js"></script> 
+<script src="/template/default/skin/js/main.js"></script> 
+<script src="/template/default/skin/js/layout.js"></script> 
+{include file="/default/waphead"}
+</body>
+</html>

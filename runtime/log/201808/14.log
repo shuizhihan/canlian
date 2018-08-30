@@ -1,0 +1,1336 @@
+[ 2018-08-14T17:35:08+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.226013s][吞吐率：4.42req/s] [内存消耗：5,726.70kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:38:21+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.230013s][吞吐率：4.35req/s] [内存消耗：5,851.52kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+[ error ] [0]模板文件不存在:/default/waphead.htm[D:\wamp64\www\canlian\thinkphp\library\think\Template.php:1086]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:38:41+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.300018s][吞吐率：3.33req/s] [内存消耗：6,025.17kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:40:26+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.214012s][吞吐率：4.67req/s] [内存消耗：6,026.73kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:41:49+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.155008s][吞吐率：6.45req/s] [内存消耗：6,027.28kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:43:30+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.213012s][吞吐率：4.69req/s] [内存消耗：5,743.01kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:43:45+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.218013s][吞吐率：4.59req/s] [内存消耗：5,743.01kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:47:25+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.237014s][吞吐率：4.22req/s] [内存消耗：5,743.10kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://dzc.canlian.com/public/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.006000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:59:14+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.232013s][吞吐率：4.31req/s] [内存消耗：6,028.22kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://dzc.canlian.com/public/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:59:45+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.189010s][吞吐率：5.29req/s] [内存消耗：6,028.22kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://dzc.canlian.com/public/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T17:59:51+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.183010s][吞吐率：5.46req/s] [内存消耗：5,743.33kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://dzc.canlian.com/public/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-14T18:03:59+08:00 ] 127.0.0.1 127.0.0.1 GET /public/index.php
+[ log ] dzc.canlian.com/public/index.php [运行时间：0.165010s][吞吐率：6.06req/s] [内存消耗：6,142.23kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\canlian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dzc.canlian.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://dzc.canlian.com/public/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\canlian\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 74 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 75 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=canlian;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

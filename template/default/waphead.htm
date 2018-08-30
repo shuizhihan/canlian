@@ -1,0 +1,56 @@
+<nav id="mmenu" class="noDis">
+  <div class="mmDiv">
+    <div class="MMhead"> <a href="#mm-0" class="closemenu noblock">x</a> <a href="{dede:global.cfg_weibo/}" target="_blank" class="noblock"><i class="fa fa-weibo"></i></a> <a href="{dede:global.cfg_qqweibo/}" target="_blank" class="noblock"><i class="fa fa-tencent-weibo"></i></a> <!--<a href="" target="_blank" class="noblock">English</a>--> </div>
+    <div class="mm-search">
+      <form  class="mm-search-form" name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+        <input type="hidden" name="kwtype" value="0" />
+        <input type="text" autocomplete="off" value="" name="q" class="side-mm-keyword" placeholder="输入关键字..."/>
+      </form>
+    </div>
+    <ul>
+      <li class="m-Lev1 m-nav_0"><a href="/">网站首页</a></li>
+      {dede:channelartlist typeid='top'}
+      <li class="m-Lev1"> <a href="{dede:field name='typeurl'/}" class="m-menu1">{dede:field name='typename'/}</a>
+        <ul class="m-submenu">
+          {dede:channel type='son' noself='yes'}
+          <li class="Lev2"> <a href="[field:typeurl/]" class="m-menu2">[field:typename/]</a> </li>
+          {/dede:channel}
+        </ul>
+      </li>
+      {/dede:channelartlist}
+    </ul>
+  </div>
+</nav>
+<link type="text/css" rel="stylesheet" href="/template/default/skin/css/jquery.mmenu.all.css" />
+<script type="text/javascript" src="/template/default/skin/js/jquery.mmenu.all.min.js"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	var mmenu=$('nav#mmenu').mmenu({
+		slidingSubmenus: true,
+		classes		: 'mm-white', //mm-fullscreen mm-light
+		extensions	: [ "theme-white" ],
+		offCanvas	: {
+			position: "right", //left, top, right, bottom
+			zposition: "front" //back, front,next
+			//modal		: true
+		},
+		searchfield		: false,
+		counters		: false,
+		//navbars		: {
+			//content : [ "prev", "title", "next" ]
+		//},
+		navbar 		: {
+			title : "网站导航"
+		},
+		header			: {
+			add		: true,
+			update	: true,
+			title	: "网站导航"
+		}
+	});
+	$(".closemenu").click(function() {
+		var mmenuAPI = $("#mmenu").data( "mmenu" );
+		mmenuAPI.close();
+	});
+});
+</script>
